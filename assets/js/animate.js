@@ -43,8 +43,7 @@ tlabout.from('.abs-2', 1, {position:"absolute"});
 
 
 
-// tl2.from("#box", 1, {opacity: 0, scale: 0});
-// tl2.to("#box", .5, {left: "20%", scale: 1.3, borderColor: 'white', borderWidth: 12, boxShadow: '1px 1px 0px 0px rgba(0,0,0,0.09)'})
+
 
 
 if(window.innerWidth > 600){
