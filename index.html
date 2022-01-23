@@ -94,9 +94,9 @@
                                     <p> minitues </p>
                                 </div>
                             </div>
-                            <a href="#" class="join-btn backdrop-blur">
-                                <div class="bgcolor"></div>
-                                <span>Join Pre-Sale</span>
+                            <!-- backdrop-blur -->
+                            <a href="#" class="join-btn ">
+                                Join Pre-Sale
                             </a>
                         </div>
                     </div>
@@ -1614,7 +1614,8 @@ color:#ECECEC;
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
                         
                     </div>
@@ -1738,10 +1739,10 @@ color:#ECECEC;
     <script>
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 0,
-           pagination: {
-           el: ".swiper-pagination",
-          dynamicBullets: true,
-    },
+            navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
   });
 
 
