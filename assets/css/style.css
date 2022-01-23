@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
 
 }
-body{
+body,html{
     overflow-x: hidden;
 }
 .messageimage{
@@ -1072,7 +1072,6 @@ span {
     display: flex;
     align-items: center;
     width: 100%;
-    position: relative;
 }
 .about-card-item .imagesdiv img{
     margin-left: 35px;
@@ -1082,6 +1081,28 @@ span {
 .about-card-item .imagesdiv .svgdiv{
     position: relative;
 
+}
+.about-card-item .firstimagsediv .mainimgdivfirst{
+    position: absolute;
+    left: 0;
+    height: auto;
+    width: auto;
+}
+
+.about-card-item .firstimagsediv .mainimgdivfirst img{
+    width: auto;
+    height: auto;
+    margin: 0;
+    transform: translateY(-2px);
+}
+.about-card-item .firstimagsediv .mainimgdivfirst::before{
+    content: " ";
+    position: absolute;
+    top: 47.7%;
+    left: -300%;
+    height: 1.5px;
+    width: 200px;
+    background: rgb(211, 210, 210);
 }
 .about-card-item .imagesdiv.firstimagsediv .pos{
     position: absolute;
@@ -1147,6 +1168,15 @@ span {
     margin-left: 35px;
     height: 10px;
     width: 300px;
+}
+.about-card-item .imagesdiv.threethimagesdiv .mainimgdivthreeth::before{
+    content: " ";
+    position: absolute;
+    top: 13.5%;
+    right: -200%;
+    height: 1.5px;
+    width: 845px;
+    background: rgb(211, 210, 210);
 }
 .about-card-item span {
     margin-top: 43px;
@@ -1469,6 +1499,16 @@ line-height: 140%;
 text-align: center;
 
 color: #ECECEC;
+transition: all 300ms;
+}
+.form-area button:hover{
+    background: linear-gradient(262.64deg, #00DFFF -72.72%, #FC576E 142.37%);
+}
+.form-area button.active{
+    background: linear-gradient(262.64deg, rgba(0, 223, 255, 0.2) -72.72%, rgba(252, 87, 110, 0.2) 142.37%);
+}
+.form-area button.active i{
+    color: #FC576E;
 }
 .form-area button i{
     margin-left: 13px;
