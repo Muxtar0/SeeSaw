@@ -40,14 +40,7 @@ tldetail.from('.abs-2', 2, {top:320,position:"absolute",display:"none"});
 tlabout.from('.abs-1', 1, {position:"absolute"});
 tlabout.from('.abs-3', 1, {position:"absolute"});
 tlabout.from('.abs-2', 1, {position:"absolute"});
-// if(window.innerWidth > 992){
-//   tldetail.from('.abs-1', 2, {left:10,top:150,position:"absolute",display:"none"});
-//   tldetail.from('.abs-3', 2, {top:150,position:"absolute",display:"none"});
-//   tldetail.from('.abs-2', 2, {top:320,position:"absolute",display:"none"});
-//   tlabout.from('.abs-1', 1, {position:"absolute"});
-//   tlabout.from('.abs-3', 1, {position:"absolute"});
-//   tlabout.from('.abs-2', 1, {position:"absolute"});
-// }
+
 
 
 // tl2.from("#box", 1, {opacity: 0, scale: 0});
