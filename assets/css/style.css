@@ -161,7 +161,27 @@ ul {
     font-family: helvati regular;
     font-weight: 400;
 }
-
+.h-right{
+    display: flex;
+    align-items: center;
+}
+.h-right .socialmedias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+.h-right .socialmedias ul{
+    display: flex;
+    align-items: center;
+}
+.h-right .socialmedias ul li{
+    margin: 0 8px;
+}
+.h-right .socialmedias ul li a{
+    color: white;
+    font-size: 20px;
+}
 #banner {
     position: relative;
     z-index: 10;
@@ -1232,7 +1252,27 @@ span {
     padding: 130px 0;
 }
 #map .swiper-button-next:after, .swiper-button-prev:after{
-    color: var(--back-color);
+    display: none;
+
+}
+#map .swiper-button-next i,
+#map .swiper-button-prev i{
+    color: black;
+    font-size: 20px;
+}
+#map .swiper-button-next,
+#map .swiper-button-prev{
+    bottom: 0;
+    top: auto;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+}
+#map .swiper-button-next{
+    transform: translateX(10px);
+}
+#map .swiper-button-prev{
+    transform: translateX(-40px);
 }
 #map .container{
     background: var(--white-color);
