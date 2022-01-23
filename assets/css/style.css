@@ -6,6 +6,9 @@
     box-sizing: border-box;
     outline: none;
     scroll-behavior: smooth;
+
+}
+body{
     overflow-x: hidden;
 }
 .messageimage{
@@ -1057,13 +1060,94 @@ span {
 
 }
 
-
+.about-card-item-threeth{
+    transform: translateY(-13px);
+}
 .about-card-item {
     margin-top: 118px;
     display: flex;
     flex-direction: column;
 }
+.about-card-item .imagesdiv{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.about-card-item .imagesdiv img{
+    margin-left: 35px;
+    height: 10px;
+    width: 200px;
+}
+.about-card-item .imagesdiv .svgdiv{
+    position: relative;
 
+}
+.about-card-item .imagesdiv.firstimagsediv .pos{
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+}
+.about-card-item .imagesdiv.firstimagsediv .svgdiv{
+    display: flex;
+    align-items: center;
+}
+.about-card-item .imagesdiv.firstimagsediv .svgdiv img{
+    margin: 0;
+    margin-right: 15px;
+    width: auto;
+    height: auto;
+}
+.about-card-item .imagesdiv.secondimagesdiv .svgdiv::before{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+    width: 6px;
+    height: 6px;
+    background: black;
+    transform: rotate(45deg);
+}
+.about-card-item .imagesdiv.secondimagesdiv .svgdiv::after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+    width: 6px;
+    height: 6px;
+    background: black;
+    transform: rotate(45deg);
+}
+.about-card-item .imagesdiv.threethimagesdiv .svgdiv::before{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+    width: 6px;
+    height: 6px;
+    background: black;
+    transform: rotate(45deg);
+}
+.about-card-item .imagesdiv.threethimagesdiv .svgdiv{
+    display: flex;
+    align-items: center;
+}
+.about-card-item .imagesdiv.threethimagesdiv .svgdiv img{
+    margin-left: 15px;
+    width: auto;
+    height: auto;
+}
+.about-card-item .imagesdiv.threethimagesdiv img{
+    margin-left: 35px;
+    height: 10px;
+    width: 300px;
+}
 .about-card-item span {
     margin-top: 43px;
     margin-bottom: 12px;
