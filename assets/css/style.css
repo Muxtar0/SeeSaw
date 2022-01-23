@@ -47,6 +47,7 @@
 #banner .andiv{
     transform: scale(0);
     overflow: hidden;
+    padding: 80px 0;
 }
 .number-abs{
     transform: scale(0);
@@ -161,7 +162,7 @@ ul {
 #banner {
     position: relative;
     z-index: 10;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .back-svg {

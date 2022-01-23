@@ -60,7 +60,6 @@ if(window.innerWidth > 600){
               triggerHook: "onLeave",
               duration: "100%"
   })
-  .setPin("#banner")
   
     .setTween(tlbanner)
       .addTo(controller);
