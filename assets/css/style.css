@@ -1596,7 +1596,211 @@ transition: all 300ms;
     display: none;
 }
 
+/*--------------------------------------------------------------------
+Blog Banner
+---------------------------------------------------------------------*/
+.blogbanner{
+    padding: 80px 0;
+}
+.blogbanner .pageway p{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
 
+
+    color: #5f5f5f;
+}
+.blogbanner .pageway p span{
+    margin: 0;
+}
+.blogbanner .pageway p span.margin{
+    margin: 0 10px;
+    margin-left: 5px;
+}
+.blogbanner .pageway p span.color{
+    color: white;
+}
+.blogbanner .maincontents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.blogbanner .maincontents .title{
+    width: 50%;
+}
+.blogbanner .maincontents .title h2{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 70px;
+/* or 109% */
+
+letter-spacing: -0.14px;
+font-feature-settings: 'salt' on;
+
+color: #ECECEC;
+}
+.blogbanner .maincontents .searchdiv{
+    width: 50%;
+}
+.blogbanner .maincontents .searchdiv .content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+.blogbanner .maincontents .searchdiv .content  button{
+    background:transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.blogbanner .maincontents .searchdiv .content input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 140%;
+/* or 25px */
+
+
+color: #FFFFFF;
+}
+.blogbanner .maincontents .searchdiv .content input::placeholder{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    
+    
+    color: #FFFFFF;
+}
+/*--------------------------------------------------------------------
+Video Posts
+---------------------------------------------------------------------*/
+.videoposts{
+    background: linear-gradient(0deg, #ECECEC, #ECECEC), radial-gradient(142.73% 211.5% at 91.48% 81.85%, rgba(0, 223, 255, 0.05) 0%, rgba(19, 19, 19, 0) 100%), #383E3E;
+    padding: 80px 0;
+}
+.videoposts .sectiontitle h3{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 52px;
+/* identical to box height, or 108% */
+
+letter-spacing: -0.14px;
+font-feature-settings: 'salt' on;
+
+color: #000000;
+}
+.videoposts .sectiontitle p{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 140%;
+/* or 25px */
+
+font-feature-settings: 'salt' on;
+
+color: #000000;
+}
+.videoposts .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #C4C4C4;
+    padding-bottom: 22px;
+    margin: 11px 0;
+}
+.videoposts .item .left{
+    display: flex;
+    align-items: center;
+    max-width: 60%;
+}
+.videoposts .item .left .imgdiv{
+    position: relative;
+}
+.videoposts .item .left .imgdiv img{
+    width: 74.32px;
+    height: 66px;
+    border-radius: 12px;
+}
+.videoposts .item .left .imgdiv button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: none;
+    outline: none;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 17px;
+    width: 32px;
+height: 32px;
+}
+.videoposts .item .left p{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 140%;
+/* or 25px */
+
+font-feature-settings: 'salt' on, 'ss01' on;
+
+color: #000000;
+margin-left: 21px !important;
+}
+.videoposts .item .right p:nth-child(1){
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+/* identical to box height, or 20px */
+
+font-feature-settings: 'salt' on;
+
+color: #000000;
+}
+.videoposts .item .right p:nth-child(2){
+    margin-top: 3px;
+    font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 140%;
+/* or 25px */
+
+font-feature-settings: 'salt' on;
+
+color: #000000;
+}
 /* responsive */
 
 @media only screen and (max-width:991px){
