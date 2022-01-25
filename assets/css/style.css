@@ -1875,7 +1875,7 @@ color: #000000;
     left: 50%;
     transform: translate(-50%,-50%);
 
-    z-index: 1000;
+    z-index: 100;
 }
 .videoposts .rightcol .videodiv .playbtndiv button{
     border: none;
@@ -1907,30 +1907,34 @@ color: #000000;
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 100;
+    z-index: 10;
+}
+.videoposts .rightcol .videodiv .mainimg{
+    width: 85%;
 }
 .videoposts .rightcol .videodiv .secondimg{
     position: absolute;
-    top: 68px;
+    top: 44px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 10;
+    z-index: 1;
     width: 80%;
     
 }
 .videoposts .rightcol .videodiv .bgcolor{
     content: " ";
     position: absolute;
-    top: 94px;
+    top: 54px;
     left: 50%;
     transform: translateX(-50%);
-    height: 358px;
+    height: 430px;
     width: 70%;
     z-index: 1;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     border: 3px solid #272727;
     border-radius: 16px;
 }
+
 /*--------------------------------------------------------------------
 Blog Posts
 ---------------------------------------------------------------------*/
@@ -2137,8 +2141,14 @@ color: #ECECEC;
     height: 361px;
     position: relative;
 border-radius: 16px;
-background: black;
+background-image:url(../images/blog-list-bg.png) ;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 margin-top: 33px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .blogposts .rightcol .socialmedias::before{
     content: " ";
@@ -2149,11 +2159,7 @@ margin-top: 33px;
     background: radial-gradient(106.92% 198.66% at 59.56% -92.3%, rgba(252, 87, 110, 0.6) 0%, rgba(19, 19, 19, 0) 100%), radial-gradient(321.39% 230.61% at 88.19% 92.11%, rgba(0, 223, 255, 0.25) 0%, rgba(19, 19, 19, 0) 100%), #000000;
     border-radius: 16px;
 }
-.blogposts .rightcol .socialmedias{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .blogposts .rightcol .socialmedias h4{
     margin: 0;
     padding: 0;
@@ -2231,13 +2237,50 @@ width: 65%;
     position: relative;
     margin-top: 40px;
 }
+.mainsection  .imgcontainer .profilediv{
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.mainsection  .imgcontainer .profilediv img{
+    width: 32px;
+height: 32px;
+border-radius: 50%;
+}
+.mainsection  .imgcontainer .profilediv h5{
+    margin: 0 10px;
+    font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+z-index: 100;
+}
+.mainsection  .imgcontainer .profilediv p{
+    font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 140%;
+/* identical to box height, or 17px */
+
+
+color: #FFFFFF;
+z-index: 100;
+
+
+}
 .mainsection  .imgcontainer::before{
     content: " ";
     position: absolute;
     top: 0;
     left: 0;
     width:100%;
-    height: 200px;
+    height: 300px;
     background: black;
     z-index: 1;
 }
@@ -2326,13 +2369,65 @@ text-align: center;
     color: black;
     font-size: 30px;
 }
+.videopopup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+}
+.videopopup.active{
+    visibility: visible;
+    opacity: 1;
+}
+.videopopup .closediv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .4;
+}
+.videopopup .videodiv{
+    width: 80%;
+    height: 80%;
+}
+.videopopup video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 /* responsive */
-
+@media (max-width:1400px){
+    .videoposts .rightcol .videodiv .bgcolor{
+        top:5px;
+    }
+}
 @media only screen and (max-width:991px){
     .abs-1,
     .abs-2,
     .abs-3{
         position: absolute;
+    }
+    .videoposts .rightcol .videodiv .mainimg{
+        width: 63%;
+    }
+    .videoposts .rightcol .videodiv .secondimg{
+        width: 57%;
+        top: 51px;
+    }
+    .videoposts .rightcol .videodiv .bgcolor{
+        width: 49%;
+        top: 51px;
+        height: 346px;
     }
     .custombanner .maincontents .title h2{
         width: 100%;
@@ -2340,13 +2435,8 @@ text-align: center;
     .videoposts .rightcol .videodiv{
         margin-top: 30px;
     }
-    .videoposts .rightcol .videodiv .secondimg{
-         width: auto;
-         top: 41px;
-    }
-    .videoposts .rightcol .videodiv .bgcolor{
-        width: 58%;
-    }
+
+
     .infitems {
         margin-top: 20px;
     }
@@ -2519,6 +2609,20 @@ left: 110px;
     .form-area form .top-form{
         margin-bottom: 0;
     }
+    .custombanner .maincontents .title h2{
+        font-size: 34px;
+        line-height: 47px;
+    }
+    .blogposts .leftcol .item{
+        height: 286px;
+    }
+    .mainsection .imgcontainer::before{
+        height: 174px;
+    }
+    .videopopup .videodiv{
+        width: 95%;
+        height: 50%;
+    }
     #form{
         padding: 50px 10px;
     }
@@ -2543,7 +2647,9 @@ left: 110px;
     }
     .videoposts .rightcol .videodiv .bgcolor{
         width: 72%;
-        height: 223px;
+        height: 260px;
+        top: 46px;
+
     }
     .videoposts .rightcol .videodiv{
         height: 291px;

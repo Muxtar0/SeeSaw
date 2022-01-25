@@ -52,7 +52,17 @@
     <div class="open-men">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 255);"><path d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm5 2h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm1-6h4v4h-4V5zM3 20a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6zm2-5h4v4H5v-4zm8 5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6zm2-5h4v4h-4v-4z"></path></svg>
     </div>
-
+    <div class="videopopup">
+        <div class="closediv">
+           
+        </div>
+        <div class="videodiv">
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+        </div>
+    </div>
     <div class="mobil-menu">
         <ul>
             <li><a href="#"> Whitepaper </a></li>
@@ -151,7 +161,7 @@
                     <div class="col-lg-6 col-12 rightcol">
                         <div class="videodiv">
                             <div class="playbtndiv">
-                                <button id="playbutton">
+                                <button class="playvideobutton">
                                     <i class="fas fa-play"></i>
                                 </button>
                             </div>
@@ -462,6 +472,8 @@
         </div>
     </footer>
     <!-- Custom JS Script -->
+    <script src="assets/js/video.js"></script>
+
     <script src="assets/js/app.js"></script>
 </body>
 </html>
