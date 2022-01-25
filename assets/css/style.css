@@ -1404,7 +1404,13 @@ span {
 
 
 
-
+#form{
+    padding: 50px;
+    background: black;
+}
+#form.formwhite{
+    background: white;
+}
 .f-content{
     display: flex;
     align-items: center;
@@ -1424,6 +1430,9 @@ letter-spacing: -0.14px;
 color: #FFFFFF;
 overflow: visible;
 }
+.formwhite .f-content .f-left h3{
+    color: black;
+}
 .f-content .f-left p{
     margin: 0;
     padding: 0;
@@ -1436,6 +1445,9 @@ line-height: 140%;
 
 color: #ECECEC;
 margin-top: 16px !important;
+}
+.formwhite .f-content .f-left p{
+    color: rgba(0, 0, 0, 0.4);
 }
 .f-content .f-right .title p{
     margin: 0;
@@ -1450,6 +1462,9 @@ font-feature-settings: 'salt' on, 'ss01' on;
 
 color: #ECECEC;
 }
+.formwhite .f-right .title p{
+    color: rgba(0, 0, 0, 0.4);
+}
 .f-content .f-right .socialmedias ul{
     margin: 0;
     padding: 0;
@@ -1463,6 +1478,9 @@ color: #ECECEC;
 .f-content .f-right .socialmedias ul li a{
     color: white;
     font-size: 20px;
+}
+.formwhite .f-content .f-right .socialmedias ul li a{
+    color: black;
 }
 #c-form{
     display: flex;
@@ -1492,6 +1510,9 @@ color: rgba(255, 255, 255, 0.7);
 
 opacity: 0.6;
 }
+.formwhite #c-form .inp-item p{
+    color: black;
+}
 #c-form .inp-item p span{
     color: #CA3B3B;
     margin: 0;
@@ -1515,6 +1536,10 @@ color: #ECECEC;
 margin-top: 8px;
 width: 100%;
 }
+.formwhite #c-form .inp-item input,
+.formwhite #c-form .inp-item textarea{
+    color: rgba(0, 0, 0, 0.4);
+}
 #c-form .inp-item select{
     border:none;
     outline: none;
@@ -1530,6 +1555,9 @@ line-height: 140%;
 color: #ECECEC;
 margin-top: 8px;
 width: 100%;
+}
+.formwhite #c-form .inp-item select{
+    color: rgba(0, 0, 0, 0.4);
 }
 #c-form .inp-item select option{
     background: var(--back-color);
@@ -1553,6 +1581,10 @@ font-size: 16px;
 
 color: #ECECEC;
 }
+.formwhite #c-form .inp-item input::placeholder,
+.formwhite #c-form .inp-item textarea::placeholder{
+    color: rgba(0, 0, 0, 0.4);
+}
 .form-area button{
     display: flex;
     align-items: center;
@@ -1572,6 +1604,11 @@ text-align: center;
 
 color: #ECECEC;
 transition: all 300ms;
+}
+.formwhite .form-area button{
+    background: rgba(0, 0, 0, 0.9);
+    border: none;
+    color: white;
 }
 .form-area button:hover{
     background: linear-gradient(262.64deg, #00DFFF -72.72%, #FC576E 142.37%);
@@ -1801,6 +1838,494 @@ font-feature-settings: 'salt' on;
 
 color: #000000;
 }
+.videoposts .btnitem{
+    width: 100%;
+}
+.videoposts .btnitem button{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 49px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    
+    text-align: center;
+    font-feature-settings: 'salt' on;
+    
+    color: #ECECEC;
+}
+.videoposts .btnitem button i{
+    margin-right: 10px;
+}
+.videoposts .rightcol .videodiv{
+    position: relative;
+    height: 418px;
+}
+.videoposts .rightcol .videodiv .playbtndiv{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    z-index: 1000;
+}
+.videoposts .rightcol .videodiv .playbtndiv button{
+    border: none;
+    outline: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    width: 93px;
+    height: 93px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+.videoposts .rightcol .videodiv .playbtndiv button::before{
+    content: " ";
+    position: absolute;
+    background: linear-gradient(262.64deg, #00DFFF -72.72%, #FC576E 142.37%);
+    inset: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: 50%;
+
+
+}
+.videoposts .rightcol .videodiv .mainimg{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.videoposts .rightcol .videodiv .secondimg{
+    position: absolute;
+    top: 68px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 80%;
+    
+}
+.videoposts .rightcol .videodiv .bgcolor{
+    content: " ";
+    position: absolute;
+    top: 94px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 358px;
+    width: 70%;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border: 3px solid #272727;
+    border-radius: 16px;
+}
+/*--------------------------------------------------------------------
+Blog Posts
+---------------------------------------------------------------------*/
+.blogposts{
+    padding: 58px 0;
+}
+.blogposts .sectiontitle{
+    margin-bottom: 57px;
+}
+.blogposts .sectiontitle h2{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 52px;
+/* identical to box height, or 108% */
+
+letter-spacing: -0.14px;
+font-feature-settings: 'salt' on;
+
+color: #FFFFFF;
+}
+.blogposts .leftcol .item{
+    display: flex;
+    align-items: center;
+    height: 329px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 16px 0;
+}
+.blogposts .leftcol .item:nth-child(1){
+    margin-top: 0;
+}
+.blogposts .leftcol .item .imgdiv{
+    width: 40%;
+    height: 100%;
+}
+.blogposts .leftcol .item .imgdiv img{
+    width: 100%;
+    height: 100%;
+}
+.blogposts .leftcol .item .informationsdiv{
+    width: 60%;
+    padding: 31px;
+}
+.blogposts .leftcol .item .informationsdiv .profilediv{
+    display: flex;
+    align-items: center;
+}
+.blogposts .leftcol .item .informationsdiv .profilediv img{
+    width: 32px;
+height: 32px;
+border-radius: 50%;
+}
+.blogposts .leftcol .item .informationsdiv .profilediv h5{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #000000;
+margin: 0 10px;
+}
+.blogposts .leftcol .item .informationsdiv .profilediv p{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 140%;
+/* identical to box height, or 17px */
+
+
+color: #000000;
+
+opacity: 0.5;
+
+}
+.blogposts .leftcol .item .informationsdiv h3{
+    margin: 18px 0;
+    padding: 0;
+    font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 120%;
+/* or 34px */
+
+
+color: #000000;
+}
+.blogposts .leftcol .item .informationsdiv > p{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 18px !important;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+
+
+color: #000000;
+}
+.blogposts .leftcol .item .informationsdiv .learnmorediv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #EBF2F8;
+    padding-top: 23px;
+}
+.blogposts .leftcol .item .informationsdiv .learnmorediv button{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.blogposts .leftcol .item .informationsdiv .learnmorediv a{
+    font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.infitems .title{
+    margin-bottom: 37px;
+}
+.infitems .title h3{
+    font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 120%;
+/* identical to box height, or 34px */
+
+font-feature-settings: 'salt' on;
+
+color: #FFFFFF;
+}
+.infitems .item{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #444444;
+    padding-bottom: 24px;
+    margin-top: 29px;
+}
+.infitems .item:nth-child(2){
+    margin-top: 0;
+}
+.infitems .item .photo{
+    width: 74.32px !important;
+height: 66px;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 12px;
+overflow: hidden;
+width: 17%;
+margin-right: 22px;
+}
+.infitems .item .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.infitems .item .textsdiv{
+    width: 83%;
+    
+}
+.infitems .item .textsdiv p.maintext{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 140%;
+/* or 25px */
+
+font-feature-settings: 'salt' on, 'ss01' on;
+
+color: #FFFFFF;
+margin-bottom: 7px !important;
+}
+.infitems .item .textsdiv p.date{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 140%;
+/* identical to box height, or 17px */
+
+font-feature-settings: 'salt' on;
+
+color: #ECECEC;
+}
+.blogposts .rightcol .socialmedias{
+    width: 100%;
+    height: 361px;
+    position: relative;
+border-radius: 16px;
+background: black;
+margin-top: 33px;
+}
+.blogposts .rightcol .socialmedias::before{
+    content: " ";
+    position: absolute;
+    inset: 0;
+    margin: -2px;
+    z-index: -1;
+    background: radial-gradient(106.92% 198.66% at 59.56% -92.3%, rgba(252, 87, 110, 0.6) 0%, rgba(19, 19, 19, 0) 100%), radial-gradient(321.39% 230.61% at 88.19% 92.11%, rgba(0, 223, 255, 0.25) 0%, rgba(19, 19, 19, 0) 100%), #000000;
+    border-radius: 16px;
+}
+.blogposts .rightcol .socialmedias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blogposts .rightcol .socialmedias h4{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 120%;
+/* identical to box height, or 22px */
+
+font-feature-settings: 'salt' on, 'ss01' on;
+
+color: #FFFFFF;
+text-align: center;
+}
+.blogposts .rightcol .socialmedias ul{
+    margin: 0;
+    padding: 0;
+    margin-top: 30px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blogposts .rightcol .socialmedias ul li{
+    margin: 0 11px;
+}
+.blogposts .rightcol .socialmedias ul li a{
+    color: white;
+    font-size: 25px;
+}
+/* populars */
+.populars{
+    padding: 96px 0;
+}
+/* custombanner */
+.custombanner{
+    padding-top: 85px;
+}
+.custombanner .pageway p{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 140%;
+/* or 25px */
+
+
+color: #ECECEC;
+}
+.custombanner .pageway p span{
+    margin-left: 5px;
+}
+.custombanner  .maincontents .title h2{
+    font-weight: bold;
+font-size: 64px;
+line-height: 70px;
+/* or 109% */
+
+letter-spacing: -0.14px;
+font-feature-settings: 'salt' on;
+
+color: #ECECEC;
+margin: 0;
+margin-top: 52px;
+width: 65%;
+}
+/* mainsection */
+.mainsection{
+    background:#FFFFFF;
+}
+.mainsection .imgcol{
+    position: relative;
+}
+.mainsection  .imgcontainer{
+    position: relative;
+    margin-top: 40px;
+}
+.mainsection  .imgcontainer::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 200px;
+    background: black;
+    z-index: 1;
+}
+.mainsection .imgcol img{
+    max-height: 536px;
+    width: 100%;
+    border-radius: 12px;
+    z-index: 100;
+    position: relative;
+}
+.mainsection .maincontainer {
+    padding-top: 54px;
+    padding-bottom: 140px;
+}
+.mainsection .maincontainer .textscol button{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.mainsection .maincontainer .textscol button svg{
+    margin-right: 4px;
+}
+.mainsection .maincontainer .textscol h4{
+    margin: 15px 0;
+    padding: 0;
+    font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 120%;
+/* or 34px */
+
+font-feature-settings: 'salt' on;
+
+color: #000000;
+}
+.mainsection .maincontainer .textscol p{
+    margin:16px  0 !important;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 140%;
+/* or 25px */
+
+text-align: justify;
+font-feature-settings: 'salt' on, 'ss01' on;
+
+color: #000000;
+
+}
+.mainsection .maincontainer .socialmediascol{
+    display: flex;
+    justify-content: center;
+}
+.mainsection .maincontainer .socialmediascol h4{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
+    font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 140%;
+/* or 25px */
+
+font-feature-settings: 'salt' on;
+
+color: #000000;
+text-align: center;
+}
+.mainsection .maincontainer .socialmediascol li{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainsection .maincontainer .socialmediascol li a{
+    color: black;
+    font-size: 30px;
+}
 /* responsive */
 
 @media only screen and (max-width:991px){
@@ -1808,6 +2333,22 @@ color: #000000;
     .abs-2,
     .abs-3{
         position: absolute;
+    }
+    .custombanner .maincontents .title h2{
+        width: 100%;
+    }
+    .videoposts .rightcol .videodiv{
+        margin-top: 30px;
+    }
+    .videoposts .rightcol .videodiv .secondimg{
+         width: auto;
+         top: 41px;
+    }
+    .videoposts .rightcol .videodiv .bgcolor{
+        width: 58%;
+    }
+    .infitems {
+        margin-top: 20px;
     }
     .card-abs1{
         left: 0;
@@ -1978,9 +2519,46 @@ left: 110px;
     .form-area form .top-form{
         margin-bottom: 0;
     }
+    #form{
+        padding: 50px 10px;
+    }
     .time-center{
         padding: 0;
     }
+    .blogposts .leftcol .item .informationsdiv h3{
+        font-size: 16px;
+    }
+    .blogposts .leftcol .item .informationsdiv{
+        padding: 13px;
+    }
+    .blogposts .leftcol .item .informationsdiv > p{
+        font-size: 12px;
+    }
+    .videoposts .rightcol .videodiv .mainimg{
+        width: 95%;
+    }
+    .videoposts .rightcol .videodiv .secondimg{
+        width: 85%;
+        top: 45px;
+    }
+    .videoposts .rightcol .videodiv .bgcolor{
+        width: 72%;
+        height: 223px;
+    }
+    .videoposts .rightcol .videodiv{
+        height: 291px;
+    }
+    .blogbanner .maincontents{
+        flex-direction: column;
+    }
+    .blogbanner .maincontents .title{
+        width: 100%;
+    }
+    .blogbanner .maincontents .searchdiv{
+        width: 100%;
+        margin-top: 50px;
+    }
+
     .f-content{
         flex-direction: column;
     }
