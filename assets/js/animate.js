@@ -13,9 +13,16 @@ const controller = new ScrollMagic.Controller();
 
 
 tlbanner.from('.andiv', 1,{ease: Power4.easeInOut,scale:1});
-tlpaper.from('#paper .p-left', 1, {opacity: 0});
+if(window.innerWidth > 600){
+  tlpaper.from('#paper .p-left', 1, {opacity: 0});
 tlpaper.from('#paper .p-right', 1, {opacity: 0});
 tlpaper.from('#paper .pconcon', 1, {y:200, opacity: 0});
+}
+else{
+  tlpaper.from('#paper .p-left', 1, {opacity: 0},"=-4");
+tlpaper.from('#paper .p-right', 1, {opacity: 0},"=-4");
+tlpaper.from('#paper .pconcon', 1, {y:200, opacity: 0},"=-1");
+}
 tlbonus.from('.bonus-svg', 1, { width: "70px"}, "=-1");
 tlbonus.from('.bonus-alt', 1, {y:-100, opacity: 0});
 tlbonus.from('.number-bonus', 1, {y:100, opacity: 0});
@@ -60,7 +67,7 @@ else{
   const scene1 = new ScrollMagic.Scene({
     triggerElement: "#banner",
               triggerHook: "onLeave",
-              duration: "100%"
+              duration: "900"
   })
   
     .setTween(tlbanner)
@@ -76,6 +83,7 @@ const scene2 = new ScrollMagic.Scene({
 .setPin("#paper")
   .setTween(tlpaper)
 		.addTo(controller);
+
 const scene3 = new ScrollMagic.Scene({
       triggerElement: "#bonus",
                 triggerHook: "onLeave",
@@ -142,3 +150,8 @@ const scene8 = new ScrollMagic.Scene({
 function updatePercentage() {
   
 }
+const rotateimg = document.querySelector('#banner .number-abs img')
+
+setTimeout(() => {
+  rotateimg.classList.remove('active')
+}, 60000);

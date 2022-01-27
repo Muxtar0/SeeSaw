@@ -481,7 +481,10 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 
 .number-abs img{
     max-width: 100%;
+}
+.number-abs img.active{
     animation: rotateanimationfornumimg 18000ms infinite;
+
 }
 @keyframes rotateanimationfornumimg {
     0%{
@@ -2550,6 +2553,12 @@ left: 110px;
       width: 95%;
       margin: auto;
   }
+  #banner .andiv{
+      padding: 0;
+  }
+  #banner{
+      padding: 0;
+  }
   .form-area form .select{
     width: 100% !important;
 }
@@ -2608,6 +2617,9 @@ left: 110px;
 @media only screen and (max-width:578px){
     .form-area form .top-form{
         margin-bottom: 0;
+    }
+    #banner .andiv{
+        padding-bottom: 40px;
     }
     .custombanner .maincontents .title h2{
         font-size: 34px;
