@@ -11,7 +11,6 @@ var tlcard = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 
 
-
 tlbanner.from('.andiv', 1,{ease: Power4.easeInOut,scale:1});
 if(window.innerWidth > 600){
   tlpaper.from('#paper .p-left', 1, {opacity: 0});
